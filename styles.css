@@ -213,7 +213,7 @@ nav {
 }
 
 .header__content p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.75rem;
@@ -221,6 +221,7 @@ nav {
 }
 
 .header__btns {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
