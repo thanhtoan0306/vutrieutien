@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+}
+.main {
+  height: 100vh;
+  background-color: #6faed3;
+}
+.picture {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: #115983;
+}
+.picture img {
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+}
