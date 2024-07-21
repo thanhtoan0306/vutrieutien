@@ -636,3 +636,7 @@ button.youtube-button:hover svg {
 .wave {
   flex: 1;
 }
+.playpause-button {
+  max-width: 80px;
+  aspect-ratio: 1;
+}
