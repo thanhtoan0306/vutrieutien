@@ -9,9 +9,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/pubblic/play-button.png" />
+    <script src="https://unpkg.com/wavesurfer.js"></script>
 
     <title>Vu Trieu Tien | Podcast</title>
   </head>
+
   <body>
     <nav>
       <div class="nav__header">
@@ -21,7 +23,7 @@
           >
         </div>
         <div class="nav__menu__btn" id="menu-btn">
-          <span><i class="ri-menu-line"></i></span>
+          <!-- <span><i class="ri-menu-line"></i></span> -->
         </div>
       </div>
       <ul class="nav__links" id="nav-links">
@@ -92,114 +94,117 @@
           mình được lắng nghe câu chuyện , lá thư của bạn. Hãy chia sẻ nó ở đây
           nhé.
         </p>
-        <!-- <p>
-          Chào bạn! Cho phép Tiên gọi mình là bạn, vì ở đây, mình sẽ là những
-          người bạn đồng hành cùng nhau chia sẻ câu chuyện tâm hồn. Rất vui vì
-          mình được lắng nghe câu chuyện , lá thư của bạn. Hãy chia sẻ nó ở đây
-          nhé.
-        </p> -->
-        <!-- <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@vutrieutien/video/7391675210761538823"
-          data-video-id="7391675210761538823"
-          style="max-width: 605px; min-width: 325px"
-        >
-          <section>
-            <a
-              target="_blank"
-              title="@vutrieutien"
-              href="https://www.tiktok.com/@vutrieutien?refer=embed"
-              >@vutrieutien</a
-            >
-            Anh sẽ tìm được một người muốn nắm tay đi hết cuộc đời. Em cũng tìm
-            được người kề cạnh sáng tối.
-            <a
-              title="podcast"
-              target="_blank"
-              href="https://www.tiktok.com/tag/podcast?refer=embed"
-              >#podcast</a
-            >
-            <a
-              title="radiotamtrang"
-              target="_blank"
-              href="https://www.tiktok.com/tag/radiotamtrang?refer=embed"
-              >#radiotamtrang</a
-            >
-            <a
-              title="vutrieutien"
-              target="_blank"
-              href="https://www.tiktok.com/tag/vutrieutien?refer=embed"
-              >#vutrieutien</a
-            >
-            <a
-              title="chualanh"
-              target="_blank"
-              href="https://www.tiktok.com/tag/chualanh?refer=embed"
-              >#chualanh</a
-            >
-            <a
-              target="_blank"
-              title="♬ Hoàng Hôn Nhớ_Anh Tú - TRỌNG Music 🎶"
-              href="https://www.tiktok.com/music/Hoàng-Hôn-NhớAnh-Tú-7334645444628237058?refer=embed"
-              >♬ Hoàng Hôn Nhớ_Anh Tú - TRỌNG Music 🎶</a
-            >
-          </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script> -->
-        <!-- <iframe
-          width="500"
-          height="200"
-          src="https://www.youtube.com/embed/N7H762rQE-I?si=Oouh6MXWGmgZRKN8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe> -->
-        <div class="header__btns">
-          <a href="https://www.youtube.com/@TrieuTienOfficial">
-            <button class="youtube-button">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
+        <!-- <div class="player">
+          <img
+            src="./assests/play.png"
+            alt="play"
+            id="playBtn"
+            title="Play / Pause"
+          />
+          <div id="waveform"></div>
+        </div> -->
+        <div class="music-player">
+          <div class="info">
+            <!-- <h3>- A fairy music</h3> -->
+            <div class="button-track">
+              <div>
+                <img
+                  height="80"
+                  width="80"
+                  src="assests/play-circle-svgrepo-com.png"
+                  alt="play"
+                  id="playBtn"
+                  title="Play / Pause"
+                />
               </div>
-              <span>YouTube</span>
-            </button>
-          </a>
-          <a href="https://www.tiktok.com/@vutrieutien">
-            <button class="youtube-button tiktok-button">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <span>Tiktok</span>
-            </button>
-          </a>
+
+              <div class="wave" id="waveform"></div>
+            </div>
+          </div>
         </div>
+      </div>
+      <script>
+        const pauseIcon = (playBtn = document.getElementById("playBtn"));
+        stopBtn = document.getElementById("stopBtn");
+        volumeBtn = document.getElementById("volumeBtn");
+
+        var wavesurfer = WaveSurfer.create({
+          container: "#waveform",
+          waveColor: "#e3bbee",
+          progressColor: "#fe38ab",
+          barWidth: 3,
+          responsive: true,
+          hideScrollbar: true,
+          barRadius: 3,
+        });
+        wavesurfer.load("airoicunghanhphuc.mp3");
+
+        playBtn.onclick = function () {
+          wavesurfer.playPause();
+          if (playBtn.src.match("play")) {
+            playBtn.src = "assests/pause-circle-svgrepo-com.png";
+          } else {
+            playBtn.src = "assests/play-circle-svgrepo-com.png";
+          }
+        };
+
+        // stopBtn.onclick = function () {
+        //   wavesurfer.stop();
+        //   playBtn.src = "assests/play.png";
+        // };
+
+        // volumeBtn.onclick = function () {
+        //   wavesurfer.toggleMute();
+        //   if (volumeBtn.src.match("volume")) {
+        //     volumeBtn.src = "assests/mute.png";
+        //   } else {
+        //     volumeBtn.src = "assests/volume.png";
+        //   }
+        // };
+      </script>
+      <div class="header__btns">
+        <a href="https://www.youtube.com/@TrieuTienOfficial">
+          <button class="youtube-button">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span>YouTube</span>
+          </button>
+        </a>
+        <a href="https://www.tiktok.com/@vutrieutien">
+          <button class="youtube-button tiktok-button">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  height="40"
+                  width="40"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span>Tiktok</span>
+          </button>
+        </a>
       </div>
     </header>
 
